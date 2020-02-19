@@ -1,10 +1,11 @@
 class Puppy 
     attr_accessor :name, :breed, :age
     @@all = []
-    def initialize(name, breed, age)
-        @name = name
-        @breed = breed 
-        @age =  age
+      
+    def initialize(nev)
+        @name = nev[:name]
+        @breed = nev[:breed] 
+        @age =  nev[:age]
         @@all << self
     end
 
